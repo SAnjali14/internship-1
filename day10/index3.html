@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color:rgb(230, 114, 193);
+            color:rgb(224, 222, 218);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo" class="sample"> Hello everyone</h1>
+    <a href="https://www.google.com">Google</a>
+
+    <button onclick="change()">Click me to change the background</button>
+
+    <script>
+        let result = document.querySelector("h1");
+        result.classList.remove("active");
+        let link= document.querySelector("a");
+        link.href="https://www.google.com";
+
+        function change(){
+            document.querySelector("button").classList.toggle("active");
+        }
+</script>
+</body>
+</html>
